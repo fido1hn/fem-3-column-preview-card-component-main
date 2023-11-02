@@ -63,7 +63,7 @@ body {
 }
 
 .card-text {
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.5;
   color: hsla(0, 0%, 100%, 0.75);
 }
@@ -78,7 +78,6 @@ body {
   margin-top: auto;
   width: 14.5rem;
   text-transform: capitalize;
-  text-align: center;
   transition: all 0.3s;
 }
 
