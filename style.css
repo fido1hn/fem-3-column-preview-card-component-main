@@ -72,6 +72,7 @@ body {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
+  white-space: nowrap;
   padding: 1.4rem 3.1rem;
   border-radius: 150rem;
   background-color: hsl(0, 0%, 95%);
