@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(38, 67%, 93%);
+  /* center the child element in the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1.5rem;
+  overflow: visible;
+}
+
+.cards {
+  display: flex;
+  max-width: 92rem;
+  height: 50rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 400;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 4.6rem;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-icon {
+  width: 6.4rem;
+  margin-bottom: 4rem;
+}
+
+.card-header {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  margin-bottom: 4.1rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-text {
+  font-weight: 200;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.4rem 3.1rem;
+  border-radius: 150rem;
+  background-color: hsl(0, 0%, 95%);
+  margin-top: auto;
+  width: 14.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: inset 0 0 0 0.2rem hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.card-1 .btn:link,
+.card-1 .btn:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-1 .btn:hover,
+.card-1 .btn:active {
+  color: inherit;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 .btn:link,
+.card-2 .btn:visited {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-2 .btn:hover,
+.card-2 .btn:active {
+  color: inherit;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 .btn:link,
+.card-3 .btn:visited {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-3 .btn:hover,
+.card-3 .btn:active {
+  color: inherit;
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Mobile View */
+@media (max-width: 23.43em) {
+  html {
+    font-size: 56.25%;
+    overflow: scroll;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 32.7rem;
+    height: 132.6rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+  }
+
+  .btn:link,
+  .btn:visited {
+    margin-top: 2.7rem;
+  }
+}
