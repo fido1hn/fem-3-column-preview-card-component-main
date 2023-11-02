@@ -17,8 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 1.5rem;
-  overflow: visible;
 }
 
 .cards {
@@ -126,8 +124,11 @@ body {
 /* Mobile View */
 @media (max-width: 23.43em) {
   html {
-    font-size: 56.25%;
-    overflow: scroll;
+    font-size: 43.75%;
+  }
+
+  body {
+    height: 150.2rem;
   }
 
   .cards {
@@ -140,6 +141,15 @@ body {
 
   .btn:link,
   .btn:visited {
-    margin-top: 2.7rem;
+    margin-top: auto;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 4.6rem;
+    height: 46rem;
   }
 }
